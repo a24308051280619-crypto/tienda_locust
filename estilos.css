@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenedor {
+    width: 85%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-weight: bold;
+}
+
+nav ul li a:hover, nav ul li a.activo {
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+
+.seccion {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.producto-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #fafafa;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.producto-card h3 {
+    margin: 10px 0 5px 0;
+    font-size: 18px;
+}
+
+.producto-card .precio {
+    color: #28a745;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.producto-img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
